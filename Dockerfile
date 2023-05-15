@@ -29,9 +29,9 @@ WORKDIR /app
 
 RUN apk add proxychains-ng
 
-ENV PROXY_URL=""
-ENV OPENAI_API_KEY=""
-ENV CODE=""
+ENV PROXY_URL="https://chat.2bno.one/"
+ENV OPENAI_API_KEY="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"
+ENV CODE="123"
 
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/standalone ./
